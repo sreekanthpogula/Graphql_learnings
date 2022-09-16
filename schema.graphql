@@ -1,0 +1,40 @@
+### Adding a New User
+type UserDetails {
+  id: ID!
+  name: String!
+  email: String!
+  username: String!
+  
+}
+
+### Getting All Users List
+type allUser: {
+    edges{
+        node{
+            name: String!
+            email: String!
+            username: String!
+        }
+    }
+}
+
+# Finding a User with Username
+type findUser: 
+{
+    id: ID!
+    name: String!
+    email: String!                        
+}
+### Updating Username With Email ID
+type changeUsername{
+  user 
+    {
+        name: String!
+        email: String!
+        username: String!
+    }
+}
+
+
+
+
